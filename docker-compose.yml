@@ -5,8 +5,8 @@ services:
     container_name: nginx-proxy
     image: nginx:1.23
     volumes:
-      - ./nginx/conf.d/:/etc/nginx/conf.d/
-      - ./letsencrypt/:/etc/letsencrypt/
+      - ./configs/nginx/conf.d/:/etc/nginx/conf.d/
+      - ./configs/letsencrypt/:/etc/letsencrypt/
     ports:
       - 80:80
       - 443:443
